@@ -36,7 +36,7 @@ def GenMultiLine(posible_chars, ML, MINC, MAXC, NIMG, output_folder):
         # file name
         FNi = str(i) + '.png'
         img_path = os.path.join(output_folder, FNi)
-        MakeImg(Si, TF, img_path, (w, h + 5))
+        MakeImg(Si, TF, img_path, (w, 32), (5, 8))
         Y.append((FNi, Si.replace('\n', '@')))
     return Y
 
